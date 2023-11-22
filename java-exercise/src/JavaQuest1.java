@@ -56,12 +56,12 @@ public class JavaQuest1 {
     System.out.println("The variable fnumber is " + fnumber);
     System.out.println("The variable dnumber is " + dnumber);
 
-    // Find reminder. Declare variable a & reminder
+    // Find remainder. Declare variable a & remainder
     int a = 7;
     int b = 3;
     // Fix it
-    int reminder = a - b;
-    System.out.println("The variable reminder is " + reminder);
+    int remainder = a - b;
+    System.out.println("The variable remainder is " + remainder);
 
     // declare a variable x and assign value to it.
     int e = 7;
