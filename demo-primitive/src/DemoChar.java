@@ -6,7 +6,7 @@ public class DemoChar {
     char c3 = ' ';
     char c4 = '#';
     char c5 = '1';
-    char c10 = 11;//char->int
+    char c10 = 97;//char->int
     //char c6 = '11'; syntax error, string -> char
     //char c8 = '';syntax error, char has to be at least one character
     //char c7 = '11'; syntax error, char value should be single character
@@ -17,5 +17,14 @@ public class DemoChar {
     boolean isPassed3 = true;
     System.out.println("----------------");
     System.out.println(c10);
+    System.out.println("---------------------");
+    String str1 = "hello";
+    System.out.println(str1);
+    System.out.println(str1.length());
+    str1 = str1 + "world";
+    System.out.println(str1.length());
+    str1 += "!!!";
+    System.out.println(str1.length());
+    
   }
 }
