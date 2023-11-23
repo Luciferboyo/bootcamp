@@ -181,5 +181,39 @@ public class DemoOperator {
         }
         totalAmount = itemTotal + transportation;
         System.out.println("Total Amount = " + totalAmount);
+
+        //>,<,>=,<=,!
+        System.out.println("----------------");
+        boolean isPassed = false;
+        if (!isPassed) {//!isPassed -> true
+            System.out.println("isPassed is false");
+        }
+        isPassed = true;//re-assignment
+        if (isPassed) {//true
+            System.out.println("isPassed is true");
+        }
+        
+        String str = "www.apple.com";
+        if (str.length() < 10 || "www.apple.com".equals(str)) {
+            System.out.println("str.length < 10 or www.apple.com");
+        }
+
+        System.out.println("---------------------");
+        String s = "";//s.length is 0
+        System.out.println(s.length());//0
+        s += "hello";
+        if (!s.isEmpty()) {
+            System.out.println("s is NOT empty");
+        }
+        //i++,先自增，后返回自增之前的值
+        //++i,先自增，后返回自增之后的值
+        System.out.println("------------");
+        int n= 0;
+        int m = 0;
+        n = n++;
+        m = n++;
+        System.out.println("N = " + n + ", M = " + m);
+
+    
     }
 }
