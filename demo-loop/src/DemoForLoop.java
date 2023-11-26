@@ -81,15 +81,35 @@ public class DemoForLoop {
         //The loop should be ended at which number of i?
         System.out.println("------------------");
         int sim = 0;
-        for(int i = 0; i < 100;i++){
-            if (sim <= 200 && (sim+i)>200) {
+        for(int i = 0; i < 101; i++){
+            if (i % 2 == 0) {
+                continue;
+            }
+            sim += i;
+             if (sim <= 200 && (sim+i) > 200) {
+                System.out.println("i = " + i + ",sim = " +sim);
                 break;
             }
-            if (i % 2 != 0) {
-                sim += i;
-            }
-            System.out.println("i = " + i + ",sim = " +sim);
         }
-        System.out.println("sim = "+sim);    
-    }   
+        System.out.println("sim = "+sim); 
+        System.out.println("--------------");   
+        
+        String str = "abc pol ijk def xyz";
+        char target = 'f';
+        int n = 0;
+        boolean found = false;
+        for(int i = 0;i < str.length(); i++){
+            if (target == str.charAt(i)) {
+                n = i + 1;
+                found = true;
+                break;
+            }
+            n++;
+        }
+        if (found) {
+            System.out.println("Found "+ target + " at the "+ n + " th character");
+        }else{
+            System.out.println("Not found");
+        }
+    }
 }

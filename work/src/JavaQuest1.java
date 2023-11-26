@@ -1,4 +1,4 @@
-package works.src;
+package work.src;
 /**
  * Expected Output:
  * 
