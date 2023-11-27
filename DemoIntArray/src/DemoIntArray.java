@@ -28,7 +28,28 @@ public class DemoIntArray {
       String[] strArr = new String[]{"11","22"};
       System.out.println(strArr[0]);
 
-      //
-
+      //default value of int[]
+      int [] arr5 = new int[3];
+      for(int i = 0 ;i < arr5.length;i++){
+        //arr5 is storing address of the array object
+        //we use arr5[5] find out the 3 value stored in the array object
+        System.out.println("arr5[i] = " + arr5[i]);
+        //[0] -> 1
+        //[1] -> 2
+        //[2] -> 3
+        arr5[i] = i + 1;
+        System.out.println(arr5[i]);
+      }
+      
+      String str = "hello";//str is storing the address of String object hello
+      String str2 = new String("hello");//str2 if storing the address of String
+      String str3 = String.valueOf("hello");
+      System.out.println("-------------------");
+      for(int i = arr5.length - 1 ;i >= 0 ;i--){
+          System.out.print(arr5[i]);
+          if (i > 0) {
+            System.out.println(" ");
+          }
+      }
     }
 }
