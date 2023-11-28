@@ -18,9 +18,6 @@ public class DemoConversion {
         byte b2 = (byte) s3;
         System.out.println("b2 = " + b2);//-126
 
-
-
-
         int i2 = 130;
         short s4 = (short)i2;
         System.out.println(s4);
@@ -52,6 +49,14 @@ public class DemoConversion {
         double b5 = l4;
         System.out.println("b5 = " + b5);
         
+        long longValue = 12345678L;
+        float floatValue = longValue;
+        long l10 = (long)floatValue;
+
+        System.out.println("longValue: " + longValue);
+        System.out.println("floatValue: " + floatValue);
+        System.out.println("l10:"+l10);
+
 
     }
 }
