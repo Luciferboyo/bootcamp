@@ -1,4 +1,4 @@
-package DemoIntArray.src;
+package demoIntArray.src;
 
 public class DemoStringMethod {
   public static void main(String[] args) {

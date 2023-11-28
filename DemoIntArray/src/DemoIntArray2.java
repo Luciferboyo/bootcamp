@@ -1,4 +1,4 @@
-package DemoIntArray.src;
+package demoIntArray.src;
 
 import java.lang.reflect.Array;
 
