@@ -55,5 +55,6 @@ public class DemoWhileLoop {
        System.out.println(Arrays.toString(array1));
 
        
+       
     }
 }

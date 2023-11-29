@@ -41,5 +41,49 @@ public class DemoStringArray {
     //Arrays.toString -> method
     System.out.println(Arrays.toString(stringArr));
     
+    //Approach 1
+    String s = "abcabcabcabcabc";
+    char[] chaArr = new char[s.length()];
+    for(int i = 0;i < s.length();i++){
+      chaArr[i] = s.charAt(i);
+    }
+    System.out.println(Arrays.toString(chaArr));
+
+    //Approach 2
+    char[] arr6 = s.toCharArray();
+    System.out.println(Arrays.toString(arr6));
+
+    //repalace a -> c(String)
+    //Approach 1
+    char[] chaArr2 = new char[s.length()];
+    for(int i = 0;i < s.length();i++){
+      if(s.charAt(i) == 'a'){
+        chaArr2[i] = 'c';
+        continue;
+      }
+        chaArr2[i] = s.charAt(i);
+    }
+    System.out.println(Arrays.toString(chaArr2));
+    //Approach 2
+    String s1 = s.replace("a", "c");
+    System.out.println(s1);
+
+    //From array to String
+    String str = "hello";
+    str = new String("hello");
+    str = String.valueOf(str);
+
+    System.out.println(String.valueOf(0));
+    System.out.println(String.valueOf(1.0d));
+    System.out.println(String.valueOf(1.0f));
+    System.out.println(String.valueOf(1L));
+    System.out.println(String.valueOf(new char[]{'a','b'}));
+    byte b = 100;
+
+    //replace(String method)
+    String str4 = "abacabcbacaca";
+    String result4 = str4.replace('a', 'c');
+    System.out.println("str4 = "+str4);
+    System.out.println("result4 = " + result4);
   }
 }

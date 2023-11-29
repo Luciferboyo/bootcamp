@@ -13,7 +13,6 @@ public class JavaQuest6 {
     int[] array = new int[15];
     array[0] = 0;
     array[1] = 1;
-    int index = 0;
     for(int i = 2;i < array.length;i++){
        array[i] = array[i - 1] + array[i - 2];
     }
