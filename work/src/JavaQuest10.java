@@ -31,9 +31,9 @@ public class JavaQuest10 {
     int temp;
     if (indexPosition < my_array.length - 1 && indexPosition > 0) {
       for(int i = indexPosition;i < my_array.length;i++){
-        temp = my_array[i];//18,29
-        my_array[i] =  newValue;//100,18
-        newValue = temp;//18,29
+        temp = my_array[i];
+        my_array[i] =  newValue;
+        newValue = temp;
       }
     }
     

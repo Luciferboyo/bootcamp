@@ -53,5 +53,14 @@ public class DemoWrapper {
 
         int i3 = c1;
 
+        Double d = 1.8d;
+        Double d2 = 1.9d;
+        if(d < d2){//double > double
+
+        }
+        if (d2.compareTo(d) == 0) {//double == double
+            
+        }
+
     }
 }
