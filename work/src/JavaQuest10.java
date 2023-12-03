@@ -36,7 +36,7 @@ public class JavaQuest10 {
         newValue = temp;
       }
     }
-    
     System.out.println("New Array: " + Arrays.toString(my_array));
+    input.close();
   }
 }
