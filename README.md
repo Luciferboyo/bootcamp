@@ -37,3 +37,13 @@ Sorting - Bubble,insertion
 String Literal
 Integer Cache
 Stack & Heap memory(object)
+
+##Week3
+-Instance Method
+    -1.Belongs to the object(Person p1 = new Person(); p1.swim();)
+    -2.Able to control the instance variable by "this"
+
+-Static Method
+    -1.Belongs to the class(ClassName.staticMethod() -> Person.swim(3))
+    -2.Not able to read/write instance variable
+    -3.The output completely derived by the input parameters

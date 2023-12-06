@@ -1,5 +1,7 @@
 package demoClass.src;
 
+import java.math.BigDecimal;
+
 public class Circle {
   
   private double radius;
@@ -21,7 +23,7 @@ public class Circle {
   }
 
   public double area(double radius){
-    return radius * radius * Math.PI;
+    return Math.pow(this.radius, 2) * Math.PI;
   }
 
   public double perimeter(double radius){
@@ -30,6 +32,13 @@ public class Circle {
 
   public double diameter(double radius){
     return 2 * radius;
+  }
+
+  //Static Method
+  public static double areaStatic(double radius){
+    BigDecimal r = BigDecimal.valueOf(radius);
+    BigDecimal pi = BigDecimal.valueOf(Math.PI);
+    return r.multiply(r).multiply(pi).doubleValue();//how to fix by BigDecimal?
   }
 
   public static void main(String[] args) {
@@ -43,5 +52,13 @@ public class Circle {
     Circle c = new Circle(99);
     System.out.println("c.getRadius() = " + c.getRadius());
 
+    System.out.println("c area = " + c.area(10));
+
+    Circle circle2;
+
+    //pass by reference
+    circle2 = circle1;
+
+    areaStatic(0);
   }
 }
