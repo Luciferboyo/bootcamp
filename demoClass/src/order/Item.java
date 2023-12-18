@@ -1,6 +1,7 @@
 package demoClass.src.order;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 public class Item {
   
@@ -62,4 +63,34 @@ public class Item {
   
   }
 
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+
+    if (!(obj instanceof Item)) {
+      return false;
+    }
+
+    Item item = (Item)obj;
+    return Objects.equals(this.price, item.priceGet())
+        && Objects.equals(this.desc, item.descGet())
+        && Objects.equals(this.quantity, item.quantityGet());
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(this.desc,this.price,this.quantity);
+  }
+
+  /**
+   *   private double price;
+
+  private int quantity;
+
+  private String desc;
+
+  private double totalAmount;
+   */
 }

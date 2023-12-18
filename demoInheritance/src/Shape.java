@@ -42,6 +42,7 @@ public abstract class Shape { //abstract class vs class(Difffference)
     BigDecimal totalArea = BigDecimal.valueOf(0);
     for (Shape data: shapes) {
       totalArea = totalArea.add(BigDecimal.valueOf(data.area()));
+      //shape.area() -> which object (circle/quare) -> different implementation
     }
     return totalArea.doubleValue();
   }
@@ -58,5 +59,11 @@ public abstract class Shape { //abstract class vs class(Difffference)
 
     Circle circle2 = (Circle)s1;
     System.out.println(circle2.getRadius());
+
+    Shape[] shapes = new Shape[]{new Circle(4.2),new Square(9)};
+
+    System.out.println(totalArea(shapes));
+
+    
   }
 }

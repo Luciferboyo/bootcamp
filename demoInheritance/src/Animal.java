@@ -1,8 +1,6 @@
 package demoInheritance.src;
 
-import leeCode.src.A;
-
-public class Animal {//abstract
+public  class Animal {//abstract
     
     public int age;
 

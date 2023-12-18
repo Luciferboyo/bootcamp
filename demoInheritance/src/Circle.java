@@ -15,6 +15,10 @@ public class Circle extends Shape{
     this.radius = radius;
   }
 
+  public Circle(double radius){
+    this.radius = radius;
+  }
+
   //Circle extends Shape,so it has to implement all abstract methods in Parent abstract class
   @Override
   public double area(){

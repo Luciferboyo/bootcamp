@@ -27,6 +27,6 @@ public class JavaQuest19 {
     // print the expected output
     JavaQuest19 myCar = new JavaQuest19(2020, "ModelY");
 
-    System.out.println(myCar.carModel);
+    System.out.println(myCar);
   }
 }
