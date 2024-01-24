@@ -1,5 +1,7 @@
 package demoEnum.src;
 
+import java.util.Objects;
+
 public class Order {
   
   private int id;
@@ -35,5 +37,24 @@ public class Order {
       System.out.println("_________________");
     }
     System.out.println(order1.getStatus().getVal());
+  }
+
+  @Override
+  public int hashCode() {
+    
+    return super.hashCode();
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (!(obj instanceof Order)) {
+      return false;
+    }
+    Order order = (Order)obj;
+    return Objects.equals(this.id, order.getId())
+          && Objects.equals(this.status, order.getStatus());
   }
 }

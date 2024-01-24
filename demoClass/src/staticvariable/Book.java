@@ -7,6 +7,8 @@ public class Book {
 
   private String bookName;
 
+  private static int idx;
+
   public Book(){
     this.bookId = ++idx;
   }
